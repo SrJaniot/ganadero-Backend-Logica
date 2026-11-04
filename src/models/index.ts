@@ -14,3 +14,4 @@ export * from './model-id-ciclo-ica.model';
 export * from './model-filtro-auditoria.model';
 export * from './model-sincronizar-registros.model';
 export * from './model-cambios-desde.model';
+export * from './model-filtro-indicadores.model';

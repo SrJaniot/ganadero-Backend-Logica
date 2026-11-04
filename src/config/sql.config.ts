@@ -39,4 +39,7 @@ export namespace SQLConfig {
 
   //funciones de las alertas (alertas.controller.ts). EL TERCER PARAMETRO ES LA FECHA (NULL = HOY)
   export const ObtenerAlertas = 'SELECT FUN_OBTENER_ALERTAS_JSON($1,$2,$3::DATE) as resultado';
+
+  //funciones de los indicadores (indicadores.controller.ts). DESDE Y HASTA COMO FECHA (NULL = LOS ULTIMOS 12 MESES)
+  export const ObtenerIndicadores = 'SELECT FUN_OBTENER_INDICADORES_JSON($1,$2,$3::DATE,$4::DATE) as resultado';
 }
