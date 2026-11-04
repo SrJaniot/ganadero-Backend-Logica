@@ -1,0 +1,6 @@
+export * from './ping.controller';
+export * from './fincas.controller';
+export * from './catalogos.controller';
+export * from './hato.controller';
+export * from './auditoria.controller';
+export * from './sincronizacion.controller';
