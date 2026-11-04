@@ -36,4 +36,7 @@ export namespace SQLConfig {
   export const SincronizarRegistros = 'SELECT FUN_SINCRONIZAR_REGISTROS_JSON($1,$2,$3) as resultado';
   export const ObtenerCambiosDesde = 'SELECT FUN_OBTENER_CAMBIOS_JSON($1,$2,$3) as resultado';
   export const ObtenerSincronizaciones = 'SELECT FUN_OBTENER_SINCRONIZACIONES_JSON($1,$2) as resultado';
+
+  //funciones de las alertas (alertas.controller.ts). EL TERCER PARAMETRO ES LA FECHA (NULL = HOY)
+  export const ObtenerAlertas = 'SELECT FUN_OBTENER_ALERTAS_JSON($1,$2,$3::DATE) as resultado';
 }

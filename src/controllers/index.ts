@@ -5,3 +5,4 @@ export * from './hato.controller';
 export * from './auditoria.controller';
 export * from './sincronizacion.controller';
 export * from './fotos.controller';
+export * from './alertas.controller';
