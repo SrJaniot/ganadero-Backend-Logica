@@ -25,6 +25,7 @@ export namespace SQLConfig {
   export const ObtenerLotes = 'SELECT FUN_OBTENER_LOTES_JSON($1,$2) as resultado';
   export const ObtenerAnimales = 'SELECT FUN_OBTENER_ANIMALES_JSON($1,$2,$3) as resultado';
   export const ObtenerAnimalUUID = 'SELECT FUN_OBTENER_ANIMAL_POR_UUID_JSON($1,$2,$3) as resultado';
+  export const ActualizarFotoAnimal = 'SELECT FUN_ACTUALIZAR_FOTO_ANIMAL_JSON($1,$2,$3,$4) as resultado';
   export const ObtenerLineaTiempo = 'SELECT FUN_OBTENER_LINEA_TIEMPO_JSON($1,$2,$3) as resultado';
   export const ObtenerHistorialRegistro = 'SELECT FUN_OBTENER_HISTORIAL_REGISTRO_JSON($1,$2,$3,$4) as resultado';
 
