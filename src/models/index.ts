@@ -15,3 +15,4 @@ export * from './model-filtro-auditoria.model';
 export * from './model-sincronizar-registros.model';
 export * from './model-cambios-desde.model';
 export * from './model-filtro-indicadores.model';
+export * from './model-filtro-plata.model';

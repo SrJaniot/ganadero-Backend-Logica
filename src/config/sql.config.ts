@@ -42,4 +42,6 @@ export namespace SQLConfig {
 
   //funciones de los indicadores (indicadores.controller.ts). DESDE Y HASTA COMO FECHA (NULL = LOS ULTIMOS 12 MESES)
   export const ObtenerIndicadores = 'SELECT FUN_OBTENER_INDICADORES_JSON($1,$2,$3::DATE,$4::DATE) as resultado';
+  //PLATA (FASE 5B): RESUMEN DEL PERIODO (SOLO EL DUEÑO). LOS MOVIMIENTOS SE ANOTAN Y ANULAN POR /SincronizarRegistros (TIPO MOVIMIENTO)
+  export const ObtenerPlata = 'SELECT FUN_OBTENER_PLATA_JSON($1,$2,$3::DATE,$4::DATE) as resultado';
 }

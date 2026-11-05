@@ -7,3 +7,4 @@ export * from './sincronizacion.controller';
 export * from './fotos.controller';
 export * from './alertas.controller';
 export * from './indicadores.controller';
+export * from './plata.controller';
