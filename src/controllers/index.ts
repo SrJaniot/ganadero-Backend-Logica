@@ -8,3 +8,4 @@ export * from './fotos.controller';
 export * from './alertas.controller';
 export * from './indicadores.controller';
 export * from './plata.controller';
+export * from './whatsapp.controller';

@@ -17,6 +17,7 @@ import {MySequence} from './sequence';
 import { AuthenticationComponent, registerAuthenticationStrategy } from '@loopback/authentication';
 import { AuthStrategy } from './auth/strategy';
 
+import {ResumenWhatsappObserver} from './observers/resumen-whatsapp.observer';
 export {ApplicationConfig};
 
 export class MsLogicaGanaderoApplication extends BootMixin(
@@ -52,5 +53,8 @@ export class MsLogicaGanaderoApplication extends BootMixin(
     registerAuthenticationStrategy(this, AuthStrategy);
     // Registra el componente de autenticación una sola vez
     this.component(AuthenticationComponent);
+
+    // vigilante del resumen diario por WhatsApp (fase 5d): cada 5 minutos
+    this.lifeCycleObserver(ResumenWhatsappObserver);
   }
 }

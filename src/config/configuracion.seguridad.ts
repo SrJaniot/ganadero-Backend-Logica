@@ -10,6 +10,9 @@ export namespace ConfiguracionSeguridad{
     export const hostSeguridad = process.env.CONECTION_SEGURIDAD ;
     //CLAVE COMPARTIDA CON ms-seguridad-ganadero PARA LAS LLAMADAS SIN USUARIO (BUSCAR, CREAR Y ACTIVAR CUENTAS)
     export const claveServicios = process.env.CLAVE_SERVICIOS ;
+    //WHATSAPP (FASE 5D): EVOLUTION API PROPIA EN EL SERVIDOR (SOLO EN LA RED DE LA CASA) Y SU LLAVE GLOBAL (NUNCA EN EL REPO)
+    export const evolutionUrl = process.env.EVOLUTION_URL ?? 'http://192.168.1.102:8080';
+    export const whatsappApiKey = process.env.WHATSAPP_API_KEY ;
 
 
 

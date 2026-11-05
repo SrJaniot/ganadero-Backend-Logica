@@ -16,3 +16,6 @@ export * from './model-sincronizar-registros.model';
 export * from './model-cambios-desde.model';
 export * from './model-filtro-indicadores.model';
 export * from './model-filtro-plata.model';
+export * from './model-config-whatsapp.model';
+export * from './model-cambiar-resumen-whatsapp.model';
+export * from './model-probar-resumen-whatsapp.model';

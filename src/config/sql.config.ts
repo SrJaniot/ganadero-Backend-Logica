@@ -44,4 +44,13 @@ export namespace SQLConfig {
   export const ObtenerIndicadores = 'SELECT FUN_OBTENER_INDICADORES_JSON($1,$2,$3::DATE,$4::DATE) as resultado';
   //PLATA (FASE 5B): RESUMEN DEL PERIODO (SOLO EL DUEÑO). LOS MOVIMIENTOS SE ANOTAN Y ANULAN POR /SincronizarRegistros (TIPO MOVIMIENTO)
   export const ObtenerPlata = 'SELECT FUN_OBTENER_PLATA_JSON($1,$2,$3::DATE,$4::DATE) as resultado';
+  //RESUMEN DIARIO POR WHATSAPP (FASE 5D)
+  export const ObtenerConfigWhatsapp = 'SELECT FUN_OBTENER_CONFIG_WHATSAPP_JSON() as resultado';
+  export const GuardarConfigWhatsapp = 'SELECT FUN_GUARDAR_CONFIG_WHATSAPP_JSON($1,$2,$3,$4) as resultado';
+  export const EncolarResumenesWhatsapp = 'SELECT FUN_ENCOLAR_RESUMENES_JSON(CURRENT_DATE) as resultado';
+  export const ObtenerMensajesPendientesWhatsapp = 'SELECT FUN_OBTENER_MENSAJES_PENDIENTES_JSON($1) as resultado';
+  export const MarcarMensajeWhatsapp = 'SELECT FUN_MARCAR_MENSAJE_WHATSAPP_JSON($1,$2,$3) as resultado';
+  export const ObtenerResumenWhatsapp = 'SELECT FUN_OBTENER_RESUMEN_WHATSAPP_JSON($1,$2) as resultado';
+  export const CambiarResumenWhatsapp = 'SELECT FUN_CAMBIAR_RESUMEN_WHATSAPP_JSON($1,$2,$3) as resultado';
+  export const TextoResumenWhatsapp = 'SELECT FUN_TEXTO_RESUMEN_WHATSAPP_JSON($1,$2,CURRENT_DATE) as resultado';
 }

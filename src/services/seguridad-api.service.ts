@@ -45,6 +45,11 @@ export class SeguridadApiService {
     return this.enviar('cambiar-estado-usuario-servicio', datos);
   }
 
+  //EL CELULAR DE UNA CUENTA (RESUMEN POR WHATSAPP, FASE 5D): DATOS {celular}; 404 SI NO EXISTE, 400 SI ESTA DESACTIVADA
+  async obtenerCelular(datos: {id_usuario: string}) {
+    return this.enviar('obtener-celular-servicio', datos);
+  }
+
   //EL DUEÑO LE PONE UNA CONTRASEÑA NUEVA A UNA PERSONA DE SU FINCA QUE LA OLVIDO
   async restablecerClave(datos: {id_usuario: string, clave: string}) {
     return this.enviar('restablecer-clave-usuario-servicio', datos);
